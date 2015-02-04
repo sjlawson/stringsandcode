@@ -13,3 +13,30 @@
  *= require_tree .
  *= require_self
  */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+div.site-title {
+    background-image: url('stringsandcode.jpg');
+    background-size: 100% 200px;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+
+div.site-title div.site-title-text {
+    position: absolute;
+    bottom: 20px;
+    font-family: 'Book Antiqua', Palatino, 'Palatino Linotype', 'Palatino LT STD', Georgia, serif;
+    font-weight: bold;
+    color: white;
+    font-size: 60px;
+    text-shadow: 2px 2px #aaaaaa;
+    text-align: center;
+}
+
+.floatright {
+    float:right;
+}
