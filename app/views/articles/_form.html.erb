@@ -33,7 +33,11 @@
   </div>
   <div class="field">
     <%= f.label :category_id %><br>
-    <%= f.text_field :category_id %>
+    <%= f.select :category_id, options_for_select(
+        @categories.map { |cat|
+            [cat.title, cat.id]
+        } ) %>
+
   </div>
   <div class="actions">
     <%= f.submit %>
